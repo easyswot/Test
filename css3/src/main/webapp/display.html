@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>diplay</title>
+<link href="style.css" rel="stylesheet">
+<link href="display.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+ <ul>
+  <li><a href="#sec01">menu01</a></li>
+  <li><a href="#sec02">menu02</a></li>
+  <li>
+   <a href="#sec03" class="mn03">menu03</a>
+   <ul id="sub"><!-- 서브메뉴 -->
+    <li><a href="#">sub01</a></li>
+    <li><a href="#">sub02</a></li>
+   </ul>
+  </li>
+  <li><a href="#sec04">menu04</a></li>
+  <li><a href="#sec05">menu05</a></li>
+ </ul>
+</nav>
+
+
+
+<h1>box-model</h1>
+ <ol>
+  <li>inline요소 - 한 줄에 나란히 오면서
+   상하 margin, 크기 적용 불가
+   &lt;a&gt;, &lt;b&gt;, &lt;label&gt;, &lt;span&gt;, ...
+  </li>
+  <li>block요소 - 한 줄에 나란히 올 수 없고<br>
+   margin, 크기 적용 가능
+   &lt;p&gt;, &lt;hn&gt;, &lt;section&gt;, &lt;div&gt;, ...
+   </li>
+ </ol>
+
+
+<h1>display 요소가 화면에 나타나는 방식 지정</h1>
+
+<ul>
+ <li>display: inline;		block인 요소를 inline으로 바꿈</li>
+ <li>display: block;		inline인 요소를 inlineblock으로 바꿈</li>
+ <li>display: inlime-block;	inline과 block을 합친 성격으로 바꿈</li>
+ <li>display: none;			화면에서 요소를 사라지게 함</li>
+</ul>
+
+<section id="sec01">
+	<h2>display:inline; <i>block인 요소를 inline으로</i></h2>
+	
+	<p>block인 p</p>
+	<div>block인 div</div>
+	<aside>block인 aside</aside>
+</section>
+
+<section id="sec02">
+	<h2>display:block; <i>inline인 요소를 block으로</i>
+	</h2>
+	
+	<a href="#" class="bl">inline인 a</a>
+	<b class="bl">inline인 b</b>
+	<span class="bl">inline인 span</span>
+</section>
+
+<section id="sec03">
+	<h2>display:inline; <i>inline과 block을 합친 성격</i>
+	</h2>
+	
+	<p>block인 p</p>
+	<div>block인 div</div>
+	<aside>block인 aside</aside>
+
+	
+	<a href="#">inline인 a</a>
+	<b>inline인 b</b>
+	<span>inline인 span</span>
+</section>
+
+<section id="sec04">
+	<h2>display:none;
+	<i>(영역까지) 화면에서 요소를 사라지게</i>
+	</h2>
+	
+	<p>block인 p</p>
+	<div>block인 div</div>
+	<aside>block인 aside</aside>
+
+	
+	<a href="#">inline인 a</a>
+	<b>inline인 b</b>
+	<span>inline인 span</span>
+	<i>inline인 i-1</i>
+	<i>inline인 i-2</i>
+</section>
+
+<section id="sec05">
+	<h2>visibility:hidden;
+	<i>영역은 남기고 화면에서 요소를 사라지게</i>
+	</h2>
+	
+	<p>block인 p</p>
+	<div>block인 div</div>
+	<aside>block인 aside</aside>
+
+	
+	<a href="#">inline인 a</a>
+	<b>inline인 b</b>
+	<span>inline인 span</span>
+	<i>inline인 i-1</i>
+	<i>inline인 i-2</i>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

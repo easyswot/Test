@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>padding-요소의 내부여백</title>
+<link href="padding.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1>padding</h1>
+ <p id="p01">요소의 내부(테두리 기준) 여백</p>
+
+<h2>1. padding의 방향별 지정 속성</h2>
+ <ul id="ul01">
+  <li>padding-top:n ; 내부 위쪽에만 n적용</li>
+  <li>padding-right:n ; 내부 오른쪽에만 n적용</li>
+  <li>padding-bottom:n ; 내부 아래쪽에만 n적용</li>
+  <li>padding-left:n ; <br>내부 왼쪽에만 n적용</li>
+ </ul>
+
+<h2>2. padding의 값 개수별 적용법</h2>
+ <ul id="ul02">
+  <li>padding: n; 양사방 동시에 n적용</li>
+  <li>padding: n n; 상하, 좌우가 서로 같은 값</li>
+  <li>padding: n n n; 상, 좌우 동일, 하 순서</li>
+  <li>padding: n n n n; 상, 우, 하, 좌의 순서</li>
+ </ul>
+ 
+<h3>폼요소에 padding 적용시</h3>
+ <input type="text" value="text" class="p-l">
+ <input type="text" value="text" class="p-t">
+ <label for="id">id</label>
+ <input type="text" id="id" value="text" class="p-n01">
+ <label for="nm">name</label>
+ <input type="text" id="nm" value="text" class="p-n02">
+
+<h3>이미지에 padding 적용시</h3>
+ <img src="img/aurora.jpg" class="im01" alt="aurora">
+ <img src="img/aurora.jpg" class="im02" alt="aurora">
+ <img src="img/aurora.jpg" class="im03" alt="aurora">
+ <img src="img/aurora.jpg" class="im04" alt="aurora">
+ 
+</body>
+</html>

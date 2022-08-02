@@ -1,0 +1,50 @@
+@charset "UTF-8";
+body {
+	font-size: 1.5em;
+	line-height: 2;
+/*	background-color: #29d;
+	color: #fff; */
+	/* 두개 적용하기(배경이미지경로도 2개, 다른 속성값도 각각 적용)
+	background-image: url("배경이미지1"), url("배경이미지2"); */
+	background-image: url("img/mythical.jpg"), url("img/art.jpg");
+	background-repeat: no-repeat;
+	background-size: 400px 300px, cover;
+	background-position: 50% 50%, 70% bottom;
+	background-attachment: scroll, fixed;
+}
+
+#ul01 {
+list-style: url("img/gif/arrow.gif")
+/* 목록 속성:불릿이미지로 기본모양 대체하기 */;}
+
+#ul02 {/*border:1px soild red;*/
+	list-style: none;/* 2-1. 목록의 기본모양 제거 */}
+
+#ul02>li {
+	/*border: 1px solid blue;*/
+	background-image: url("img/gif/face.gif")
+	/* 2-2. 배경이미지로 불릿이미지를 대체 */;
+	background-repeat: no-repeat
+	/* 2-3. 배경이미지 하나만 나타나게 */;
+	background-position: left 14px
+	/* 2-4. 배경이미지의 위치 높이를 변경 */;
+	text-indent: 20px
+	/* 2-5. 배경이미지와 겹친 글자를 우측으로 이동 */;
+}
+
+#ul02>li:hover {background-position: left 17px;}
+
+
+
+/* background-attachment */
+#sec01>p {border: 1px solid red;
+width: 30%; height:400px;
+display: inline-block;
+margin-right: 2%;
+overflow: auto;
+background-image: url("img/ground_squirrel.jpg");
+background-size: contain;}
+
+.bat-sc {background-attachment:scroll;}
+.bat-fx {background-attachment:fixed;}
+.bat-lc {background-attachment:local;}

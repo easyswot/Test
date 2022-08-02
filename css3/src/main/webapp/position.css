@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+html {scroll-behavior: smooth;}
+/* 자연스러운 스크롤 이동 */
+
+/* 1. position:static; */
+
+#sec01>div {
+	border: 1px solid;
+	position: static;
+	left: 800px;
+}
+
+/* 2. position:relative; */
+#sec02>div {
+	border: 1px solid;
+	width: 200px;
+	height: 50px;
+}
+
+.re01 {
+	position: relative;
+	left: 800px;
+}
+
+.re02 {
+	position: relative;
+	top: 250px;
+}
+
+.re03 {
+	position: relative;
+	right: 200px;
+}
+
+.re04 {
+	position: relative;
+	bottom: 200px;
+}
+
+.re05 {
+	position: relative;
+	left: 20em; bottom: 3em;
+}
+
+.re06 {
+	position: relative;
+	left: 100em; top:4em;
+}
+
+#sec02:hover>div {
+	position: static;
+}
+
+/* 3. position:absolute; */
+#sec03>p {
+	background-color: #eee;
+	white-space: pre;
+	/* 소스 그대로 공백 살리기 */
+	position: absolute;
+	left: 300px;
+}
+
+#sec03>div {
+	border: 1px solid #087;
+	width: 200px;
+	height: 50px;
+}
+
+#sec03 {
+	position: relative;
+	/* 기준이 될 상위요소 */
+	height: 500px;
+}
+
+.ab01 {
+	position: absolute;
+	left: 800px;
+}
+
+.ab02 {
+	position: absolute;
+	right: 200px;
+}
+
+.ab03 {
+	position: absolute;
+	top: 10px;
+}
+
+.ab04 {
+	position: absolute;
+	bottom: 1em;
+}
+
+.ab05 {
+	position: absolute;
+	right: 0; bottom: 0;
+}
+
+.ab06 {
+	position: absolute;
+	left: 50%; top: 50%;
+}
+
+
+.card {
+	border: none !important;
+	width: 50px !important;
+	height: 50px !important;
+	box-shadow: 1px 1px 4px #666;
+	text-align: center;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	position: absolute;
+	top: 200px;
+}
+
+.c {
+	background-color: #5af;
+	left: 0;
+	z-index: 100;
+}
+
+.a {
+	background-color: #af5;
+	left: 10px;
+	z-index: 99;
+}
+.r {
+	background-color: #f5a;
+	left: 20px;
+	z-index: 98;
+}
+
+.d {
+	background-color: #a5f;
+	left: 30px;
+	z-index: 97;
+}
+
+#sec03:hover>.a {
+	left: 50px;
+	transition: 0.7s;
+}
+
+#sec03:hover>.r {
+	left: 100px;
+	transition: 0.7s;
+}
+
+#sec03:hover>.d {
+	left: 150px;
+	transition: 0.7s;
+}
+
+
+/* 4. position:fixed */
+#quick {
+	background-color: #000;
+	border-left: 20px solid #49a;
+	width:150px;
+	padding: 10px;
+	position: fixed;
+	right: -150px;
+	bottom: 200px;
+	opacity: 0.6;
+	/* 요소의 불투명도 지정
+	   0~1사이의 값, 0일때 완전 투명 */
+}
+
+#quick:hover{
+	right: 0;
+}
+
+#quick ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#quick a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>background</title>
+<link href="style.css" rel="stylesheet">
+<link href="bgimg.css" rel="stylesheet">
+</head>
+<body>
+<h1>background 배경</h1>
+ <ul id="ul01">
+  <li>background-color: ; 배경색상</li>
+  <li>background-image:url(" ") ; 배경이미지</li>
+ </ul>
+ 
+ <h3>배역이미지 두개 적용하기</h3>
+  <p>background-image: url("A")<b>,</b> url("B");<br>
+  * 다른 속성값도 <b>,</b>로 순서대로 각각 적용.
+  </p>
+ <h2>background-image의 세부속성</h2>
+  <ul id="ul02">
+   <li>background-repeat: ; 배경이미지 반복 지정
+    <ul>
+     <li>repeat 기본값. 양사방 반복</li>
+     <li>repeat-x x축(가로)으로만 반복</li>
+     <li>repeat-y y축(세로)으로만 반복</li>
+     <li>no-repeat 반복 안함(한번만 나옴)</li>
+    </ul>
+   </li>
+   <li>background-size: ; 배경이미지 크기 지정
+    <ul>
+     <li>cover 이미지 하나로 영역 전체를 다 덮기
+      (이미지가 잘려나갈 수도 있음)</li>
+     <li>contain 이미지 하나로 가로나 세로 중 한쪽에
+      맞춰서 최대한 덮기(이미지가 잘려나가지 않음)</li>
+     <li>Xn Yn 가로 세로 순으로 직접 지정 (npx, n%, nem, ... )</li>
+    </ul>
+   </li>
+   <li>background-position: ; 배경이미지 위치 지정
+    <ul>
+     <li>left/center/right top/center/bottom 수평 수직 순으로 조합하여 지정</li>
+     <li>Xn Yn 가로 세로 순으로 직접 지정 (npx, n%, nem, ... )</li>
+    </ul>
+   
+   </li>
+   <li>background-attachment : ; 배경이미지 스크롤 여부 지정
+    <ul>
+     <li>scroll - 브라우저 스크롤바에는 스크롤, 자신 영역의 스크롤바에는 고정됨</li>
+     <li>fixed - 브라우저와 자신 영역의 스크롤바에는 고정됨</li>
+     <li>local - 브라우저와 자신 영역의 스크롤바 모두 스크롤됨</li>
+    </ul>
+   </li>
+  </ul>
+  
+  <section id="sec01">
+   <h2>background-attachment: ; 배경이미지 스크롤 여부 지정</h2>
+   <div>
+   scroll - 브라우저 스크롤바에는 스크롤, 자신 영역의 스크롤바에는 고정됨<br>
+   fixed - 브라우저와 자신 영역의 스크롤바에는 고정됨<br>
+   local - 브라우저와 자신 영역의 스크롤바 모두 스크롤됨<br>
+   </div>
+   <p class="bat-sc"><b>background-attachment:scroll;</b> Lorem ipsum
+			dolor sit amet, consectetur adipiscing elit. Sed accumsan efficitur
+			nibh ut rhoncus. Aenean ut neque convallis, bibendum neque in,
+			viverra justo. Curabitur id odio suscipit, venenatis arcu eget,
+			malesuada nisi. Vivamus sit amet lacinia tellus. Donec sit amet nisi
+			ornare nisi mattis tempor non porta arcu. In non dignissim metus. Sed
+			nunc nulla, dictum ut elementum et, porta quis nulla. Nam euismod
+			faucibus tellus, id egestas elit aliquet a. Phasellus a dapibus arcu.
+			Nunc viverra malesuada leo eget venenatis. Aenean bibendum, orci eu
+			suscipit feugiat, nibh nunc mollis est, eu eleifend urna turpis ac
+			tortor. Maecenas odio elit, maximus faucibus feugiat et, aliquet eu
+			erat. Nunc molestie urna elit, vitae venenatis nulla fringilla et.
+			Pellentesque lobortis neque id tellus consectetur, in pellentesque
+			magna tristique. Etiam commodo metus in nulla porttitor, ac tempor
+			lectus faucibus. Proin sed dictum orci. Ut tristique justo risus,
+			vitae tincidunt ante commodo quis. Morbi sodales risus et nulla
+			scelerisque congue. Vivamus leo tortor, facilisis vel nisi a,
+			eleifend iaculis felis.
+		</p>
+   <p class="bat-fx"><b>background-attachment:fixed;</b> Lorem ipsum
+			dolor sit amet, consectetur adipiscing elit. Sed accumsan efficitur
+			nibh ut rhoncus. Aenean ut neque convallis, bibendum neque in,
+			viverra justo. Curabitur id odio suscipit, venenatis arcu eget,
+			malesuada nisi. Vivamus sit amet lacinia tellus. Donec sit amet nisi
+			ornare nisi mattis tempor non porta arcu. In non dignissim metus. Sed
+			nunc nulla, dictum ut elementum et, porta quis nulla. Nam euismod
+			faucibus tellus, id egestas elit aliquet a. Phasellus a dapibus arcu.
+			Nunc viverra malesuada leo eget venenatis. Aenean bibendum, orci eu
+			suscipit feugiat, nibh nunc mollis est, eu eleifend urna turpis ac
+			tortor. Maecenas odio elit, maximus faucibus feugiat et, aliquet eu
+			erat. Nunc molestie urna elit, vitae venenatis nulla fringilla et.
+			Pellentesque lobortis neque id tellus consectetur, in pellentesque
+			magna tristique. Etiam commodo metus in nulla porttitor, ac tempor
+			lectus faucibus. Proin sed dictum orci. Ut tristique justo risus,
+			vitae tincidunt ante commodo quis. Morbi sodales risus et nulla
+			scelerisque congue. Vivamus leo tortor, facilisis vel nisi a,
+			eleifend iaculis felis.
+		</p>
+   <p class="bat-lc"><b>background-attachment:local;</b> Lorem ipsum
+			dolor sit amet, consectetur adipiscing elit. Sed accumsan efficitur
+			nibh ut rhoncus. Aenean ut neque convallis, bibendum neque in,
+			viverra justo. Curabitur id odio suscipit, venenatis arcu eget,
+			malesuada nisi. Vivamus sit amet lacinia tellus. Donec sit amet nisi
+			ornare nisi mattis tempor non porta arcu. In non dignissim metus. Sed
+			nunc nulla, dictum ut elementum et, porta quis nulla. Nam euismod
+			faucibus tellus, id egestas elit aliquet a. Phasellus a dapibus arcu.
+			Nunc viverra malesuada leo eget venenatis. Aenean bibendum, orci eu
+			suscipit feugiat, nibh nunc mollis est, eu eleifend urna turpis ac
+			tortor. Maecenas odio elit, maximus faucibus feugiat et, aliquet eu
+			erat. Nunc molestie urna elit, vitae venenatis nulla fringilla et.
+			Pellentesque lobortis neque id tellus consectetur, in pellentesque
+			magna tristique. Etiam commodo metus in nulla porttitor, ac tempor
+			lectus faucibus. Proin sed dictum orci. Ut tristique justo risus,
+			vitae tincidunt ante commodo quis. Morbi sodales risus et nulla
+			scelerisque congue. Vivamus leo tortor, facilisis vel nisi a,
+			eleifend iaculis felis.
+		</p>
+  </section>
+   
+</body>
+</html>

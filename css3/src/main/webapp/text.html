@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text - 로 시작하는 글자 속성들</title>
+<link href="style.css" rel="stylesheet">
+<link href="text.css" rel="stylesheet">
+</head>
+<body>
+<h1>text - 로 시작하는 글자 속성들</h1>
+<ul>
+ <li>text-align: ; (영역내의)글자 수평정렬</li>
+ <li>text-decoration: ; 글자의 여러줄들</li>
+ <li>text-indent: ; 글자 들여쓰기</li>
+ <li>text-transform: ; 영문글자 대소문자 변경</li>
+ <li>text-shadow: ; 글자의 그림자 효과</li>
+ <li>text-overflow: ; 영역밖의 글자 지정</li>
+</ul>
+
+<section id="sec01">
+ <h2>text-align: ; (영역내의)글자 수평정렬</h2>
+ 
+ <p class="ta01">text-align:left; 글자 수평정렬</p>
+ <p class="ta02">text-align:center; 글자 수평정렬</p>
+ <p class="ta03">text-align:right; 글자 수평정렬</p>
+ <p class="ta04">text-align:justify; 글자 수평정렬 그러므로 곧 실로 내려온 풀이 것이다. 힘차게
+			천지는 것이다.보라, 용감하고 그들은 대한 봄바람이다. 무엇을 청춘의 있는 같은 우리는 커다란 앞이 사막이다. 되려니와,
+			인생에 피가 것이다. 피에 따뜻한 오아이스도 돋고, 날카로우나 청춘의 사막이다. 열락의 방지하는 그림자는 그들은 끓는 보이는
+			것이다. 사람은 가장 유소년에게서 영락과 교향악이다. 실로 같이, 불어 거선의 아름다우냐? 할지라도 봄날의 새가 심장은 끝에
+			방황하여도, 같은 때까지 것이다. 것이 우리는 가슴이 찾아 보이는 꾸며 운다. Lorem ipsum dolor sit
+			amet, consectetur adipiscing elit. Etiam nulla enim, dignissim id
+			eros et, bibendum luctus eros. Etiam non consequat neque. Aliquam a
+			ante lacinia, pulvinar lectus in, pharetra odio. Vestibulum eget
+			ipsum eget felis sollicitudin vehicula. Nam sollicitudin posuere urna
+			vitae maximus. Sed gravida, felis non imperdiet suscipit, dui erat
+			sodales metus, eget lobortis erat arcu sit amet tellus. Interdum et
+			malesuada fames ac ante ipsum primis in faucibus. Duis dui turpis,
+			tempor sed tristique nec, feugiat eget arcu. In iaculis, mi quis
+			mollis ullamcorper, tellus est sagittis felis, ac viverra justo ex ut
+			nulla. Sed vulputate metus et auctor commodo. Vestibulum id sapien
+			nulla. Pellentesque sit amet laoreet turpis. Pellentesque hendrerit
+			elit nec sapien fermentum, in malesuada libero rhoncus. Phasellus
+			consectetur enim eu sem bibendum, vel ullamcorper erat rutrum. Duis
+			sed odio rutrum dolor tempus ullamcorper a consequat nibh. Duis non
+			egestas metus, eget dapibus felis. Orci varius natoque penatibus et
+			magnis dis parturient montes, nascetur ridiculus mus. Fusce viverra
+			dui ac tincidunt congue. Nulla tincidunt rutrum metus. Integer
+			tempus, risus nec faucibus dictum, elit nisi scelerisque ipsum, sit
+			amet interdum nisl erat sed erat. Fusce nec purus at velit auctor
+			maximus imperdiet nec risus. Praesent quis lacus ut nisi molestie
+			fermentum nec quis lorem. Donec pretium suscipit sapien sit amet
+			sodales. Fusce congue lacus ut massa rhoncus, placerat suscipit
+			libero elementum. Fusce tempor eleifend eros nec rutrum. Praesent nec
+			arcu vel mi vulputate sollicitudin. Cras posuere mattis quam eget
+			dapibus. Etiam non mauris et turpis tincidunt aliquet. Lorem ipsum
+			dolor sit amet, consectetur adipiscing elit. Nulla viverra est vel
+			dictum ornare. Aliquam erat volutpat. Praesent suscipit vehicula
+			accumsan. Sed id tincidunt sem. Cras quis nibh vel enim aliquam
+			pharetra ac at nisi. Vivamus finibus in augue sodales efficitur.
+			Pellentesque ultrices ante eros, vel fringilla nisl auctor et. Duis
+			sed purus rutrum, fermentum metus vel, sagittis felis. Cras
+			vestibulum lacus non condimentum aliquam.
+ </p>
+ 
+ <input type="text" value="left" class="in-t ta01">
+ <input type="text" value="center" class="in-t ta02">
+ <input type="text" value="right" class="in-t ta03">
+ <!-- class="A B C ..." 처럼 class는 조합하여 사용 가능 -->
+ 
+</section>
+
+<section id="sec02">
+ <h2>text-decoration: ; 글자의 여러줄들</h2>
+ 
+ <p class="td01">text-decoration: overline; 글자 윗줄</p>
+ <p class="td02">text-decoration: line-through; 글자 가로지르는 줄(취소선)</p>
+ <p class="td03">text-decoration: underline; 글자 밑줄</p>
+ <p>
+ text-decoration:
+ <a href="#" class="td04">none</a> ; 글자의 기본 줄 제거(링크)</p>
+</section>
+
+<section id="sec03">
+ <h2>text-indent: n; 글자 들여쓰기(음수값 가능, 첫 줄에만 적용됨)</h2>
+ 
+ <p class="ti01">text-indent: 1em; 글자 들여쓰기</p>
+ <p class="ti02">text-indent: 10px; 글자 들여쓰기 Fusce congue lacus ut massa
+			rhoncus, placerat suscipit libero elementum. Fusce tempor eleifend
+			eros nec rutrum. Praesent nec arcu vel mi vulputate sollicitudin.
+			Cras posuere mattis quam eget dapibus. Etiam non mauris et turpis
+			tincidunt aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Nulla viverra est vel dictum ornare. Aliquam erat volutpat.
+			Praesent suscipit vehicula accumsan. Sed id tincidunt sem. Cras quis
+			nibh vel enim aliquam pharetra ac at nisi. Vivamus finibus in augue
+			sodales efficitur. Pellentesque ultrices ante eros, vel fringilla
+			nisl auctor et. Duis sed purus rutrum, fermentum metus vel, sagittis
+			felis. Cras vestibulum lacus non condimentum aliquam.</p>
+ <p class="ti03">text-indent: 10%; 글자 들여쓰기</p>
+ <p class="ti04">text-indent: -50px; 글자 들여쓰기</p>
+</section>
+
+<section id="sec04">
+ <h2>text-transform: ; 영문글자 대소문자 변경</h2>
+ 
+ <p class="tt01">tEXt-trANsfoRm: nOne; 기본값, 변화없음</p>
+ <p class="tt02">tEXt-trANsfoRm: loWerCase; 전체를 소문자로 변경</p>
+ <p class="tt03">tEXt-trANsfoRm: uppercase; 전체를 대문자로 변경</p>
+ <p class="tt04">tEXt-trANsfoRm: caPiTalize; (단어) 첫 글자만 대문자로 변경</p>
+</section>
+
+<section id="sec05">
+ <h2>text-shadow: ; 글자의 그림자 효과</h2>
+  <pre>
+  <b>     Xn                                 Yn                  Blur    color</b>
+  <span class="le">그림자의 수평방향 거리값  그림자의 수직방향 거리값</span>  퍼짐값  색상
+  (음수 가능)              (음수 가능)
+  
+  </pre>
+ 
+ <p class="ts01">text-shadow: 2px 3px 6px #333; 글자의 그림자</p>
+ <p class="ts02">text-shadow: 2px 3px 0	#333; 글자의 그림자</p>
+ <p class="ts03">text-shadow: -2px -3px 4px #333; 글자의 그림자</p>
+ <p class="ts04">text-shadow: 2px 1px 4px #333; 글자의 그림자</p>
+ <p class="ts05">text-shadow: 10px 0; 글자의 그림자</p>
+ <p class="ts06">text-shadow: -2px -2px 4px #d70, 2px 2px 4px #70d; 글자의 그림자</p>
+ <p class="ts07">text-shadow: ; 글자의 그림자</p>
+</section>
+</body>
+</html>

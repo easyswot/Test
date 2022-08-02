@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* style.css는 수업시간 공용
+	스타일 파일임 */
+.pre {white-space: pre;
+/* 공백 처리를 그대로 살림*/}
+
+h1 {background-color: #7bf;
+ border-left: 10px solid;
+ border-right: 10px solid;
+ padding: 5px 0;
+ text-align: center;
+ color: #039;}
+ 
+section {border: 4px solid #ccc;
+ margin: 4em 1em;
+ padding: 1em;}
+
+ 
+h2 {border-bottom: 2px dashed;
+ color: #7bf;}

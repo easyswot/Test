@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+#p01 {
+	border: 1px solid;
+	padding: 1em;
+}
+#p01:hover {
+	border: none;
+	padding: 0;
+}
+
+/* 1. padding의 방향별 지정 */
+
+#ul01>li {border: 1px solid #090;}
+
+#ul01>li:nth-of-type(1) {
+/* A:nth-of-type(n)는
+A중에서 n번째인 요소를 불러오는 순서선택자.
+ n은 수식도 가능 */
+	padding-top: 30px;
+}
+
+#ul01>li:nth-of-type(2) {
+ text-align: right;
+ padding-right: 30px;
+}
+
+#ul01>li:nth-of-type(3) {
+	padding-bottom: 30px;
+}
+
+#ul01>li:nth-of-type(4) {
+	padding-left: 30px;	
+}
+
+.p-1 {padding-left: 0.5em;}
+
+.p-t {padding-top: 0.5em;
+border: none;
+border-top: 4px double #ccc;}
+
+/* 2. padding의 값 개수별 적용 */
+
+#ul02>li {border: 1px solid #009;}
+
+#ul02>li:nth-of-type(1) {
+	padding: 2em;
+}
+
+#ul02>li:nth-of-type(2) {
+	padding: 2em 0;
+}
+
+#ul02>li:nth-of-type(3) {
+	padding: 2em 0 1em;	
+}
+
+#ul02>li:nth-of-type(4) {
+	padding: 2em 20% 50px 10%;	
+}
+
+label {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-right: 14px;
+}
+
+.p-n01, .p-n02 {
+	border: none;
+	border-bottom: 4px ridge #04d;
+}
+
+.p-n01:focus, .p-n02:focus {
+	/* A:focus는 폼요소에서
+	커서가 들어왔을때, 포커싱이 되었을 때를 지정하는 가상(상태) 선택자 */
+	background-color: #9cf;
+}
+
+.p-n01 {padding: 0.7em;}
+
+.p-n02 {padding: 0.4em 0.7em;}
+
+
+/* 이미지에 padding 적용 */
+img {
+	width: 400px;
+	margin-right: 20px;
+	/* 이미지끼리의 간격 */
+}
+
+.im01 {
+	border: 24px solid #5ad;
+	padding: 60px;
+}
+
+.im02 {
+	border: 1px solid;
+	padding: 20px 20px 150px;/* 세로 가로 아래 */}
+
+.im03 {
+	border: 1px solid;
+	padding: 22px 22px 160px;
+	border-radius: 10px;			/* 영역의 모서리 라운딩 */
+	box-shadow: 2px 3px 10px #333;	/* 영역의 그림자 가로 세로 퍼지는정도 색상 */}
+
+.im04 {
+	background-color: #adf;
+	border-radius: 50%;
+	/* 모서리를 절반 깎으면 원이 됨 */
+	padding: 40px;
+	opacity: 0.6;
+	/* 요소의 불투명도(0~1)
+	   0이면 완전 투명 1은 불투명 */
+}
+
+.im04:hover {
+	border-radius: 0;
+	opacity: 1;
+	transition: 1s;
+	/* 조건에 따라 속성값의 변화를 n시간동안 서서히 보여줌(단위는 ms, s) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

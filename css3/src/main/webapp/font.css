@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body {font-family: 'Nanum Gothic', sans-serif;}
+
+/* 1. font-size */
+#sec01 {font-size: 20px;}
+
+.fs16 {font-size: 16px;}
+.fs01 {font-size: 12px;}
+.fs02 {font-size: 20px;}
+
+.fsem {font-size: 1em;}
+.fs03 {font-size: 0.75em;}
+.fs04 {font-size: 1.25em !important;}
+		/* css적용 우선순위를 최고로 높임*/
+
+.fsrem {font-size: 1rem;}
+.fs05 {font-size: 0.75rem;}
+.fs06 {font-size: 1.25rem;}
+
+/* ctrl+shift+/
+	= 주석 단축키 */
+	
+/* 2. font-weight */
+.fw01 {font-weight: 100;}
+.fw02 {font-weight: 200;}
+.fw03 {font-weight: 300;}
+.fw04 {font-weight: 400;}
+.fw05 {font-weight: 500;}
+.fw06 {font-weight: 600;}
+.fw07 {font-weight: 700;}
+.fw08 {font-weight: 800;}
+.fw09 {font-weight: 900;}
+.fw10 {font-weight: bold;}
+.fw11 {font-weight: normal; color:#00f;}
+.fw11:hover {
+	font-weight: bold;
+}
+
+/* 3. font-style */
+.fst01 {font-style: italic;}
+.fst02 {font-style: oblique;}
+.fst03 {font-style: normal;}
+.fst03:hover {
+ /* A:hover는 요소 A에 마우스를 올렸을 때의 상태를 지정하는 상태선택자 */
+	font-style: italic;
+}
+
+/* 4. font-family */
+.ff01 {font-family: "Georgia", "Garamond", "Times New Roman", serif;}
+.ff02 {font-family: "Verdana", "Arial", "Helvetica", sans-serif;}
+.ff03 {font-family: "Courier New", "Lucida Console", "Monaco", monospace;}
+.ff04 {font-family: "Copperplate", "Papyrus", fantasy;}
+
+/* google web font - https://fonts.google.com/
+
+font-family: 'Gaegu', cursive;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+*/
+
+.ff05 {font-family: 'Gaegu', cursive;}
+.ff06 {font-family: 'Nanum Myeongjo', serif;}
+
+
+

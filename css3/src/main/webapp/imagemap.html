@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<hr>
+<h1>이미지 맵</h1>
+ <pre>
+ 이미지 하나에 여러곳의 링크를 설정 가능 또는 이미지의 특정부분에만 링크 가능
+ &lt;img src="이미지" usemap="#abc"&gt;
+ &lt;map name="abc"&gt;
+  &lt;area share="rec/circle/poly" coords=" " href=" "&gt;
+ &lt;/map&gt;
+ <pre>
+<h2>이미지 맵 좌표</h2>
+ shape="rect/circle/poly"
+<ul>
+ <li>rect은 좌측상단의 꼭지점과 우측 하단의 꼭지점 좌표(x1, y1, x2, y2)</li>
+ <li>circle은 중심점과 반지름 (x1, y1, r)</li>
+ <li>poly는 시작점에서 시계방향으로 돌아가면서 좌표지정 나중에 추가로 적기(x1, y1, x2, y2, x3, y3, x4, y4)...)</li>
+</ul>
+
+<img src="img/coffee-1.jpg" usemap="#map01">
+<map name="map01">
+ <area shape="rect" coords="0, 0, 200, 150" href="test02.html" target="_blank">
+ <area shape="circle" coords="250, 190, 20" href="test03.html" target="_black">
+</map>
+
+<hr>
+<img alt="" src="img/yellow-wall.jpg" usemap="#map-y">
+<map name="#map-y">
+ <area alt="naver.com" shape="rect" title="naver.com으로 이동"
+ coords="75, 360, 150, 480" href="https://www.naver.com/" target="_blank">
+ <area alt="w3schools-imagemap" shape="circle" title="w3schools-imagemap으로 이동"
+ coords="350, 201, 10" href="https://www.w3schools.com/html/html_images_imagemap.asp" target="_blank">
+ <area alt="daum.net" shape="poly" title="daum.net으로 이동"
+ coords="170, 240, 200, 230, 220, 255, 225, 290, 155, 290, 160, 260" href="https://www.daum.net/" target="_blank">
+</map>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

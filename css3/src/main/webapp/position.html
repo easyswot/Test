@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<link href="style.css" rel="stylesheet">
+<link href="position.css" rel="stylesheet">
+</head>
+<body>
+<h1>position</h1>
+
+<ul>
+ <li>position:static; 기본값. 고정 </li>
+ <li>position:relative; 현재 위치를 기준으로 변동</li>
+ <li>position:absolute; 상위요소를 기준으로 변동</li>
+ <li>position:fixed; 브라우저를 기준으로 고정</li>
+ <li>position:sticky; relative와 fixed의 믹스</li>
+</ul>
+
+<section id="sec01">
+ <h2>1. position:static; 기본값.</h2>
+ 
+ <div>position:static; left:800; 위치변화 없음</div>
+</section>
+
+<section id="sec02">
+ <h2>2. position:relative; 현재 위치를 기준으로 변동</h2>
+ <div class="re01">position:relative; <br>
+  left: 800px;</div>
+ <div class="re02">position:relative; <br>
+  top: 250px;</div>
+ <div class="re03">position:relative; <br>
+  right: 200px;</div>
+ <div class="re04">position:relative; <br>
+  bottom: 200px;</div>
+ <div class="re05">position:relative; <br>
+  left: 20em; bottom: 3em;</div>
+ <div class="re06">position:relative; <br>
+  left: 100em; top:4em;</div>
+</section>
+
+<section id="sec03">
+ <h2>3. position:absolute; 상위요소를 기준으로 변동</h2>
+  <p>
+   기준이 될 상위요소는 position:relative로 설정
+   	  [z-index:n;]
+    z-index의 값이 클수록 겹쳤을 때 위로 올라옴
+    (z-index는 태그 입력 시 자동으로 1씩 증가)
+    음수값도 가능.
+  </p>
+ <div class="ab01">position:absolute; <br>
+  left: 800px;</div>
+ <div class="ab02">position:absolute; <br>
+  right: 200px;</div>
+ <div class="ab03">position:absolute; <br>
+  top: 10px;</div>
+ <div class="ab04">position:absolute; <br>
+  bottom: 1em;</div>
+ <div class="ab05">position:absolute; <br>
+  right: 0; bottom: 0;</div>
+ <div class="ab06">position:absolute; <br>
+  left: 50%; top: 50%;</div>
+  
+ <div class="card c">c</div>
+ <div class="card a">a</div>
+ <div class="card r">r</div>
+ <div class="card d">d</div>
+</section>
+
+<aside id="quick">
+<!-- 4. position:fixed -->
+ <nav>
+  <ul>
+   <li><a href="#sec01">position: static;</a></li>
+   <li><a href="#sec02">position: relative;</a></li>
+   <li><a href="#sec03">position: absolute;</a></li>
+   <li><a href="#">top</a></li>
+  </ul>
+ </nav>
+</aside>
+
+
+
+
+
+
+</body>
+</html>

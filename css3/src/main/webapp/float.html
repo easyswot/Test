@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float 부유</title>
+<link href="style.css" rel="stylesheet">
+<link href="float.css" rel="stylesheet">
+</head>
+<body>
+<nav id="mn-l">
+ <ul>
+  <li><a href="#sec01">section01</a></li>
+  <li><a href="#sec02">section02</a></li>
+  <li><a href="#sec03">section03</a></li>
+  <li><a href="#sec04">section04</a></li>
+  <li><a href="#sec05">section05</a></li>
+  <li><a href="#sec06">section06</a></li>
+ </ul>
+</nav>
+
+<nav id="mn-c" class="clear">
+ <ul>
+  <li><a href="#sec01">section01</a></li>
+  <li><a href="#sec02">section02</a></li>
+  <li><a href="#sec03">section03</a></li>
+  <li><a href="#sec04">section04</a></li>
+  <li><a href="#sec05">section05</a></li>
+  <li><a href="#sec06">section06</a></li>
+ </ul>
+</nav>
+
+<nav id="mn-r">
+ <ul>
+  <li><a href="#sec01">section01</a></li>
+  <li><a href="#sec02">section02</a></li>
+  <li><a href="#sec03">section03</a></li>
+  <li><a href="#sec04">section04</a></li>
+  <li><a href="#sec05">section05</a></li>
+  <li><a href="#sec06">section06</a></li>
+ </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fl">
+<h1>float - 부유하다</h1>
+<ul>
+ <li>float:left; 요소를 띄워서 왼쪽에</li>
+ <li>float:right; 요소를 띄워서 오른쪽에</li>
+</ul>
+</div>
+
+<div id="cl">
+<h1>clear - float의 영향 해제</h1>
+<ul>
+ <li>clear: both; 양쪽에 clear</li>
+ <li>clear: left; 왼쪽에 clear</li>
+ <li>clear: right; 오른쪽에 clear</li>
+</ul>
+</div>
+
+
+
+<!-- 방법3. clear전용 빈 div
+<div class=""></div>
+ -->
+
+<section id="sec01" class="clear">
+<!-- 방법2. 요소에 class로 clear -->
+ <h2>img float:left;</h2>
+ 
+ <p>
+  <img src="img/pineapple.jpg"> Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Donec vel enim varius, auctor nisi viverra, dapibus
+			augue. Aenean a lorem et mi ultrices aliquet. Fusce et orci eget
+			neque volutpat feugiat. Nullam varius, est id aliquam volutpat,
+			sapien purus dictum quam, sit amet accumsan velit orci nec eros.
+			Integer scelerisque dictum tempus. Fusce laoreet rhoncus ante, nec
+			venenatis turpis molestie luctus. Nam facilisis felis quis bibendum
+			vestibulum. Aliquam et varius libero. Integer suscipit lobortis
+			elementum. Aenean et augue id lectus mattis maximus nec nec augue.
+			Proin ornare arcu nec est lobortis, in aliquet nulla malesuada.
+ </p>
+</section>
+
+<section id="sec02">
+ <h2>img float:right;</h2>
+ 
+ <p>
+  <img src="img/pineapple.jpg"> Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Donec vel enim varius, auctor nisi viverra, dapibus
+			augue. Aenean a lorem et mi ultrices aliquet. Fusce et orci eget
+			neque volutpat feugiat. Nullam varius, est id aliquam volutpat,
+			sapien purus dictum quam, sit amet accumsan velit orci nec eros.
+			Integer scelerisque dictum tempus. Fusce laoreet rhoncus ante, nec
+			venenatis turpis molestie luctus. Nam facilisis felis quis bibendum
+			vestibulum. Aliquam et varius libero. Integer suscipit lobortis
+			elementum. Aenean et augue id lectus mattis maximus nec nec augue.
+			Proin ornare arcu nec est lobortis, in aliquet nulla malesuada.
+ </p>
+</section>
+
+<section id="sec03">
+ <h2>img float:right;</h2>
+ 
+ <p>[p-1]<br>
+  Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Donec vel enim varius, auctor nisi viverra, dapibus
+			augue. Aenean a lorem et mi ultrices aliquet. Fusce et orci eget
+			neque volutpat feugiat. Nullam varius, est id aliquam volutpat,
+			sapien purus dictum quam, sit amet accumsan velit orci nec eros.
+			Integer scelerisque dictum tempus. Fusce laoreet rhoncus ante, nec
+			venenatis turpis molestie luctus. Nam facilisis felis quis bibendum
+			vestibulum. Aliquam et varius libero. Integer suscipit lobortis
+			elementum. Aenean et augue id lectus mattis maximus nec nec augue.
+			Proin ornare arcu nec est lobortis, in aliquet nulla malesuada.
+ </p>
+ <p>[p-2]<br>
+  Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Donec vel enim varius, auctor nisi viverra, dapibus
+			augue. Aenean a lorem et mi ultrices aliquet. Fusce et orci eget
+			neque volutpat feugiat. Nullam varius, est id aliquam volutpat,
+			sapien purus dictum quam, sit amet accumsan velit orci nec eros.
+			Integer scelerisque dictum tempus. Fusce laoreet rhoncus ante, nec
+			venenatis turpis molestie luctus. Nam facilisis felis quis bibendum
+			vestibulum. Aliquam et varius libero. Integer suscipit lobortis
+			elementum. Aenean et augue id lectus mattis maximus nec nec augue.
+			Proin ornare arcu nec est lobortis, in aliquet nulla malesuada.
+ </p>
+ <p>[p-3]<br>
+  Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Donec vel enim varius, auctor nisi viverra, dapibus
+			augue. Aenean a lorem et mi ultrices aliquet. Fusce et orci eget
+			neque volutpat feugiat. Nullam varius, est id aliquam volutpat,
+			sapien purus dictum quam, sit amet accumsan velit orci nec eros.
+			Integer scelerisque dictum tempus. Fusce laoreet rhoncus ante, nec
+			venenatis turpis molestie luctus. Nam facilisis felis quis bibendum
+			vestibulum. Aliquam et varius libero. Integer suscipit lobortis
+			elementum. Aenean et augue id lectus mattis maximus nec nec augue.
+			Proin ornare arcu nec est lobortis, in aliquet nulla malesuada.
+ </p>
+</section>
+
+<section id="sec04">
+ <h2>p에 float: right; 소스 순서와 뒤바뀜</h2>
+ 
+ <p>[p-4]<br>
+  Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Donec vel enim varius, auctor nisi viverra, dapibus
+			augue. Aenean a lorem et mi ultrices aliquet. Fusce et orci eget
+			neque volutpat feugiat. Nullam varius, est id aliquam volutpat,
+			sapien purus dictum quam, sit amet accumsan velit orci nec eros.
+			Integer scelerisque dictum tempus. Fusce laoreet rhoncus ante, nec
+			venenatis turpis molestie luctus. Nam facilisis felis quis bibendum
+			vestibulum. Aliquam et varius libero. Integer suscipit lobortis
+			elementum. Aenean et augue id lectus mattis maximus nec nec augue.
+			Proin ornare arcu nec est lobortis, in aliquet nulla malesuada.
+ </p>
+ <p>[p-5]<br>
+  Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Donec vel enim varius, auctor nisi viverra, dapibus
+			augue. Aenean a lorem et mi ultrices aliquet. Fusce et orci eget
+			neque volutpat feugiat. Nullam varius, est id aliquam volutpat,
+			sapien purus dictum quam, sit amet accumsan velit orci nec eros.
+			Integer scelerisque dictum tempus. Fusce laoreet rhoncus ante, nec
+			venenatis turpis molestie luctus. Nam facilisis felis quis bibendum
+			vestibulum. Aliquam et varius libero. Integer suscipit lobortis
+			elementum. Aenean et augue id lectus mattis maximus nec nec augue.
+			Proin ornare arcu nec est lobortis, in aliquet nulla malesuada.
+ </p>
+ <p>[p-6]<br>
+  Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Donec vel enim varius, auctor nisi viverra, dapibus
+			augue. Aenean a lorem et mi ultrices aliquet. Fusce et orci eget
+			neque volutpat feugiat. Nullam varius, est id aliquam volutpat,
+			sapien purus dictum quam, sit amet accumsan velit orci nec eros.
+			Integer scelerisque dictum tempus. Fusce laoreet rhoncus ante, nec
+			venenatis turpis molestie luctus. Nam facilisis felis quis bibendum
+			vestibulum. Aliquam et varius libero. Integer suscipit lobortis
+			elementum. Aenean et augue id lectus mattis maximus nec nec augue.
+			Proin ornare arcu nec est lobortis, in aliquet nulla malesuada.
+ </p>
+</section>
+
+<section id="sec05">
+ <h2>p에 float: </h2>
+ 
+ <p class="p07">[p-7]<br>
+  Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Donec vel enim varius, auctor nisi viverra, dapibus
+			augue. Aenean a lorem et mi ultrices aliquet. Fusce et orci eget
+			neque volutpat feugiat. Nullam varius, est id aliquam volutpat,
+			sapien purus dictum quam, sit amet accumsan velit orci nec eros.
+			Integer scelerisque dictum tempus. Fusce laoreet rhoncus ante, nec
+			venenatis turpis molestie luctus. Nam facilisis felis quis bibendum
+			vestibulum. Aliquam et varius libero. Integer suscipit lobortis
+			elementum. Aenean et augue id lectus mattis maximus nec nec augue.
+			Proin ornare arcu nec est lobortis, in aliquet nulla malesuada.
+ </p>
+ <p class="p08">[p-8]<br>
+  Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Donec vel enim varius, auctor nisi viverra, dapibus
+			augue. Aenean a lorem et mi ultrices aliquet. Fusce et orci eget
+			neque volutpat feugiat. Nullam varius, est id aliquam volutpat,
+			sapien purus dictum quam, sit amet accumsan velit orci nec eros.
+			Integer scelerisque dictum tempus. Fusce laoreet rhoncus ante, nec
+			venenatis turpis molestie luctus. Nam facilisis felis quis bibendum
+			vestibulum. Aliquam et varius libero. Integer suscipit lobortis
+			elementum. Aenean et augue id lectus mattis maximus nec nec augue.
+			Proin ornare arcu nec est lobortis, in aliquet nulla malesuada.
+ </p>
+ <p class="p09">[p-9]
+  float으로 띄운 요소의 그 다음 요소가 밀고 올라오므로
+  제자리로 보내기 위해 clear시킴<br>
+  Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Donec vel enim varius, auctor nisi viverra, dapibus
+			augue. Aenean a lorem et mi ultrices aliquet. Fusce et orci eget
+			neque volutpat feugiat. Nullam varius, est id aliquam volutpat,
+			sapien purus dictum quam, sit amet accumsan velit orci nec eros.
+			Integer scelerisque dictum tempus. Fusce laoreet rhoncus ante, nec
+			venenatis turpis molestie luctus. Nam facilisis felis quis bibendum
+			vestibulum. Aliquam et varius libero. Integer suscipit lobortis
+			elementum. Aenean et augue id lectus mattis maximus nec nec augue.
+			Proin ornare arcu nec est lobortis, in aliquet nulla malesuada.
+ </p>
+</section>
+
+<section id="sec06">
+ <p class="pp01">(p-01)</p>
+ <p class="pp02">(p-02)</p>
+ <p class="pp03">(p-03)</p>
+ <p class="pp04">(p-04)</p>
+ <p class="pp05">(p-05)</p>
+ <p class="pp06">(p-06)</p>
+</section>
+
+
+
+
+</body>
+</html>

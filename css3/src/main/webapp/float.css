@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/* 1. 좌측 가로형 메뉴 */
+#mn-l>ul {
+	list-style: none;	/* 목록의 기본 모양 제거 */
+}
+
+#mn-l li {
+	border: 1px solid red;
+	float: left;	/* 개별 메뉴들을 나란히 */
+	margin-bottom: 5em;
+}
+
+/* 2. 항상 정중앙의 가로형 메뉴 */
+#mn-c>ul {
+/* 	border: 1px solid olive; */
+	list-style: none;	/* 목록의 기본 모양 제거 */
+	width: 740px;	/* margin을 적용하기 위해 너비를 줄임 */
+	margin: 2em auto;	/* 수평방향의 margin을 항상 길게(auto)하여
+						   정중앙에 배치 */
+	padding-left: 0;	/* 목록의 기본 여백 제거 */
+}
+
+#mn-c li {
+/* 	border: 1px solid orange; */
+	float: left;	/* 개별 메뉴들끼리 나란히 */
+	margin-right: 2px;
+}
+
+#mn-c a {
+	background-color: #5a6;
+	border-radius: 0 10px;
+	/* 모서리 라운딩 좌측 상단과 우측 하단, 우측 상단과 좌측 하단
+	   이 순서대로 서로 같은 값 */
+	width: 120px;
+	height: 30px;
+	display: block;
+	text-decoration: none;
+	text-transform: capitalize;
+	text-align: center;
+	line-height: 30px;
+}
+
+#mn-c a:link, #mn-c a:visited {
+	color: #052;
+}
+
+#mn-c a:hover {
+	background-color: #052;
+	color: #5a6;
+	transition: 0.7s;
+}
+
+
+/* 3. 우측 가로형 메뉴 */
+#mn-r>ul {
+	border: 1px solid skyblue;
+	list-style: none;	/* 목록의 기본 모양 제거 */
+	float: right;	/* 메뉴들의 상위요소에 적용하여 우측메뉴로 */
+	padding-left: 0;
+}
+#mn-r li {
+	background-color: skyblue;
+	float: left;/* 개별 메뉴들끼리 나란히 */
+	width: 120px;
+	height: 26px;
+	margin-right: 4px;
+	border-radius: 6px;
+	border-bottom: 6px solid;
+}
+
+#mn-r li:hover {
+	background-color: blue;
+	transition: 1s;
+}
+
+#mn-r a {
+/* 	border: 1px solid #900; */
+	width: 120px;
+	height: 26px;
+	display: block;
+	text-align: center;
+	line-height: 26px;
+	text-decoration: none;
+}
+
+#mn-r:link, #mn-r a:visited {
+	/* 1. 링크의 평상시 상태 지정
+		  (초기링크, 방문한 링크 상태)
+		  반드시 있어야 하고 소스위치도 2보다 위에 */
+	color: #024;
+}
+
+#mn-r a:hover, #mn-r a:active {
+	/* 2. 링크의 작동 시 상태 지정
+		  (마우스 오버 시, 활성화 링크)
+		  소스 위치는 1보다 아래에 */
+	color: #fff;
+}
+
+
+
+
+
+.clear {clear: both;}
+
+#fl, #cl {
+/* 	border: 1px solid red; */
+	float: left;
+	width: 40%;
+	margin-left: 5%;
+}
+
+#sec01, #sec02 {
+	overflow: hidden;
+	/* float으로 빠져나간 자식요소 때문에
+	   높이값이 없어진 부모요소의 형태유지 */
+	display: inline-block;
+	width: 45%
+}
+
+
+#sec01 img {
+	float: left;
+	margin-right: 1em;
+}
+
+#sec02>p>img {
+	float: right;
+	margin-left: 1em;
+}
+
+#sec02>p {text-align: right;}
+
+/* 3. 나란히 배치용으로 float: left */
+#sec03 {
+	overflow: hidden;
+}
+
+#sec03>p {
+	border: 1px solid red;
+	width: 300px;
+	float: left;
+	margin-right: 1em;
+}
+
+#sec03>p:first-line {
+	font-size: 1.5em;
+}
+
+/* 4. 나란히 배치용으로 float: right */
+#sec04 {overflow: hidden;}
+
+#sec04>p {
+	border: 1px solid red;
+	float: right;	/* 소스 순서와 뒤바뀜 */
+	width: 300px;
+	margin-left: 1em;
+}
+
+#sec04>p:first-line {
+	font-size: 1.5em;
+}
+
+/* 5. 나란히 배치용으로
+	  float:left, right,
+	  clear 제자리로 */
+#sec05>p {
+	border: 1px solid red;
+}
+
+#sec05>p:first-line {
+	font-size: 1.3em;
+}
+
+.p07, .p08 {
+	background-color: #ccc;
+	width: 25%;
+}
+
+.p07 {float: left;}
+.p08 {float: right;}
+
+.p09 {
+	clear: both;
+	/* 방법1. 요소에 직접 clear
+	float의 영항으로 밀고 올라온 요소를 제자리로 보냄 */
+}
+
+
+/* 6.  */
+
+/* #sec06 { */
+/* 	overflow: hidden; */
+/* } */
+
+#sec06>p {border: 1px solid red;
+height: 100px;}
+
+.pp01, .pp02 {width:100px;
+float: left; 
+margin-right: 1em;}
+
+.pp03 {width:300px; }
+
+.pp04 {width:200px;
+float: left; }
+
+.pp05 {width:200px;
+float:right; }
+
+.pp06 {clear: both;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

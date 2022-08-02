@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS basic</title>
+<link href="basic.css" rel="stylesheet">
+<style type="text/css">
+ body {background-color: #acefff;
+  color: #002449; }
+ 
+ h1 {background-color: #002449;
+  border-bottom: 6px solid #05a;
+  color: #acefff;
+  text-align: center; }
+ 
+ h2 {color: #05a; }
+
+ #ul01 {
+  background-color: #fff;
+  line-height: 1.8;
+  list-style: circle;
+ }
+
+ #ul02 {
+ background-color: #fff;
+ line-height: 2;
+ list-style: square;
+ }
+ 
+ .green {color: #060;}
+ 
+ .cnt {text-align: center;
+ font-weight: bold;
+ font-size: 1.2em;}
+ 
+ 
+</style>
+
+</head>
+<body>
+<h1>CSS basic</h1>
+ <p class="cnt">태그가 화면에 나타나는 방식(스타일)을 지시하는 언어.</p>
+
+<h2>1. CSS 적용법(방식)</h2>
+ <ul id="ul01">
+  <li><b class="green">External CSS - 외부 파일 방식</b><br>
+   스타일 소스를 독립된 파일(*. )로 만들고 웹문서와 연결시켜 적용.<br>
+   하나의 스타일 파일로 여러 웹문서를 동시에 같은 스타일로 적용하거나 수정 가능.</li>
+  <li><b class="green">Internal CSS - 내장 방식</b><br>
+   스타일 소스를 웹문서의 head 영역에 적용.<br>
+   해당 웹문서에만 적용 됨.</li>
+  <li><b class="green">Inline CSS - 인라인 방식</b><br>
+   웹문서의 body 영역의 해당 태그 뒤에 직접 적용<br>
+   소스가 길어지고 통일성 있는 스타일 구성이 불가하며 유지보수에도 불리.<br>
+   <span style="font-style: italic; color: #800">세가지 방식 중 CSS적용 우선순위가 가장 높음.</span><br>
+   작업 환경상 body영역만 수정 가능한 상황일 때 사용.
+  </li>
+</ul>
+
+<h2>2. CSS 문법</h2>
+ <p style="white-space: pre; background-color: #fff; width: 200px">
+  선택자 {
+     속성:속성값;
+   }
+ </p>
+ 
+ 
+ 
+<h2>3. CSS 선택자 대표 3가지</h2>
+ <ul id="ul02">
+  <li class="m01">tag선택자 - 태그 그대로 선택자로 활용<br>
+   자동 적용, 강제 적용.</li>
+  <li class="m01">id선택자 - 태그 뒤에 id를 추가하고 #id를 불러와서 선택자로 활용<br>
+   해당 스타일 내용을 중복 적용 불가(id값이 유일한 값)하므로 주로 구조적인 용도로 쓰임</li>
+  <li class="m01">class선택자 - 태그 뒤에 class를 추가하고 .class를 불러와서 선택자로 활용<br>
+   해당 스타일 내용을 중복 가능하므로 주로 디자인적인 용도로 쓰임</li>
+ </ul>
+
+</body>
+</html>
