@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js2/test4.html</title>
+<script type="text/javascript">
+//window 내장객체 - document 내장객체 - form 내장객체 - input type=radio 내장객체
+//	: 웹브라우저 html form태그 input type=radio 태그 주제(멤버변수, 메서드() 정의)
+
+//document.폼이름.input태그이름.type 변수 input태그 type 저장
+//document.폼이름.input태그이름.value 변수 input태그 value 저장
+//document.폼이름.input태그이름.checked 변수 input태그 선택되면 true/선택해제 false
+
+//document.폼이름.input태그이름.focus() 함수() input태그 커서가 깜박
+//document.폼이름.input태그이름.blur() 함수() input태그 커서 깜빡 해제
+//document.폼이름.input태그이름.select() 함수() input태그 내용 클릭설정해서 선택
+
+function fun1() {
+	alert(document.fr.ra[0].type);
+	alert(document.fr.ra[0].value);
+	alert(document.fr.ra[0].checked)
+}
+
+function fun2() {
+	// document.fr.ra[0].checked false 같으면 동시에 document.fr.ra[1].checked false 같으면
+	// "라디오박스 선택하세요" 메시지 출력, 함수 호출한 곳으로 되돌아감
+	if(document.fr.ra[0].checked == false && document.fr.ra[1].checked == false) {
+		alert("라디오박스를 선택하세요.");
+		return;
+	}
+	
+	// 체크박스 제어
+	if(document.fr.ch[0].checked == false && document.fr.ch[1].checked == false) {
+		alert("체크박스를 선택하세요.");
+		return;
+	}
+	
+	// 폼데이터 전송
+	document.fr.submit();
+	
+	
+	
+	
+	
+}
+
+
+</script>
+</head>
+<body>
+<form action="a.jsp" method="get" name="fr">
+라디오박스(여러개중에 하나 선택) : <input type="radio" name="ra" value="ra1">라디오1
+							<input type="radio" name="ra"value="ra2">라디오2<br>
+체크박스(여러 개 선택) :	<input type="checkbox" name="ch" value="ch1">체크박스1
+					<input type="checkbox" name="ch" value="ch2">체크박스2<br>
+					
+<input type="button" value="버튼" onclick="fun1()">
+<input type="button" value="제어" onclick="fun2()">
+
+</form>
+
+
+</body>
+</html>

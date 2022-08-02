@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js1/test8.html</title>
+<script type="text/javascript">
+
+// window 내장객체 - location 내장객체 : 웹브라우저 주소를 주제(멤버변수, 메서드() 정의)
+// 객체.멤버변수	/	객체.메서드() 호출
+// location.href 변수 주소줄 내용 저장	/	location.reload()	함수() 새로고침
+
+function fun1() {
+// 	location.href 주소줄 내용 저장하는 변수
+	alert(location.href);
+}
+
+function fun2() {
+// 	href변수에 "test7.html" 저장(변수 값 변경) => 웹브라우저 주소줄 변경
+	location.href="test7.html";
+}
+
+function fun3() {
+// 	"test2.html 페이지로 이동" 메시지 출력, 주소줄 내용 test2.html 변경
+	alert("test2.html 페이지로 이동");
+	location.href="test2.html";
+	// 	window.open("test2.html", "win1", "width=500, height=400, left=50, top=50");
+}
+
+function fun4() {
+// 	새로고침 => 같은 페이지를 서버에서 새롭게 가져오기
+	location.reload();
+}
+
+</script>
+</head>
+<body>
+
+<a href="test7.html">하이퍼링크태그</a>
+
+<input type="button" value="주소줄내용" onclick="fun1()">
+<input type="button" value="address" onclick="fun2()">
+<input type="button" value="메시지 출력 주소줄 내용 변경" onclick="fun3()">
+<input type="button" value="reload" onclick="fun4()">
+
+
+</body>
+</html>

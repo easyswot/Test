@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js2/test3.html</title>
+<script type="text/javascript">
+//window 내장객체 - document 내장객체 - form 내장객체 - input type=text 내장객체
+// 		: 웹브라우저 html form태그 input type=text 태그 주제(멤버변수, 메서드() 정의)\
+// document.폼이름.input태그이름.type 변수 input태그 type 저장
+// document.폼이름.input태그이름.value 변수 input태그 value 저장
+
+// document.폼이름.input태그이름.focus() 함수() input태그 커서가 깜박
+// document.폼이름.input태그이름.blur() 함수() input태그 커서 깜빡 해제
+// document.폼이름.input태그이름.select() 함수() input태그 내용 클릭설정해서 선택
+
+function fun1() {
+	alert(document.fr.tx.type);
+	alert(document.fr.tx.value);	// 비어있음 ""
+}
+function fun2() {
+	document.fr.tx.value="내용";
+// 	커서가 깜빡
+	document.fr.tx.focus();
+// 	커서 깜빡 해제
+	document.fr.tx.blur();
+// 	내용 블럭설정에서 선택
+	document.fr.tx.select();
+	
+}
+function fun3() {
+	
+// 텍스트 상자에 입력된 글자 저장되는 변수 value
+// 문자열객체 문자열 길이 저장 => 문자열.length => 
+// alert(document.fr.tx.value);
+// alert(document.fr.tx.value.length);
+	
+//  텍스트 상자에 입력된 값이 비어있으면 "텍스트상자 입력하세요" 메시지 출력 포커스 깜빡이게
+// 	document.fr.tx.value	비어있음 ""
+
+	if(document.fr.tx.value=="") {
+// 		"텍스트 상자 입력하세요" 메시지
+		alert("텍스트상자 입력하세요");
+// 		포커스 깜빡
+		document.fr.tx.focus();
+// 		함수 호출한 곳으로 되돌아가서 멈춤
+		return;
+	}
+	
+	// 텍스트 상자에 입력된 값이 5자가 아니면
+	// "텍스트 상자에 입력길이는 5자입니다." 메시지 출력 포커스 깜빡
+	if(document.fr.tx.value.length != 5) {
+		alert("텍스트 상자의 입력길이는 5자입니다.");
+		document.fr.tx.focus();
+		return;
+	}
+	
+
+	if(document.fr.ps.value==""){
+// 		비밀번호 상자에 입력된 값이 비어있으면 "비밀번호상자 입력하세요" 메시지 출력 포커스 깜빡	
+		alert("비밀번호상자 입력하세요");
+		document.fr.ps.focus();
+// 		함수 호출한 곳으로 되돌아가서 멈춤
+		return;		
+	}
+	
+	//비밀번호 상자에 입력된 값이 8자 보다 작으면
+	// "비밀번호 상자의 입력길이는 8자 이상입니다." 메시지 출력 포커스 깜빡
+	if(document.fr.ps.value.length < 8) {
+		alert("비밀번호 상자의 입력길이는 8자 이상입니다.");
+		document.fr.ps.focus();
+		return;
+	}
+
+	if(document.fr.ta.value==""){
+// 		여러줄 상자에 입력된 값이 비어있으면 "여러 줄 상자 입력하세요" 메시지 출력 포커스 깜빡
+		alert("여러줄상자 입력하세요");
+		document.fr.ta.focus();
+// 		함수 호출한 곳으로 되돌아가서 멈춤
+		return;
+	}
+	// 여러줄 상자에 입력된 값이 5~10자 사이가 아니면
+	// "여러 줄 상자의 입력값은 5~10자 입니다." 메시지 출력 포커스 깜빡
+	if(document.fr.ta.value.length < 5 || document.fr.ta.value.length > 10) {
+		alert("여러 줄 상자의 입력 값은 5~10자 입니다.");
+		document.fr.ta.focus();
+		return;
+	}
+
+	
+// 		서버 전송
+		document.fr.submit();
+	
+	retutn;
+	
+	
+}
+
+
+
+</script>
+</head>
+<body>
+<form action="a.jsp" method="get" name="fr">
+텍스트상자 : <input type="text" name="tx"><br>
+비밀번호 : <input type="password" name="ps"><br>
+여러줄 입력 : <textarea name="ta" rows="5" cols="10"></textarea><br>
+<input type="button" value="텍스트상자 확인" onclick="fun1()">
+<input type="button" value="텍스트상자 값 변경" onclick="fun2()">
+<input type="button" value="텍스트상자 제어" onclick="fun3()">
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

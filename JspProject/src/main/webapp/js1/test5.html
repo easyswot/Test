@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js1/test5.html</title>
+<script type="text/javascript">
+
+// 내장함수 : 언어가 만들어질 때 미리 정의해놓은 함수
+
+// 메시지 출력 내장함수
+// alert("message");
+
+// 확인 취소 선택하는 내장함수 => 리턴값이 확인 true / 취소 false
+// alert("리턴받은 값 : " + confirm("확인, 취소를 선택하세요"));
+// var r = confirm("확인, 취소를 선택하세요.");
+// alert("리턴값을 변수에 담아서 사용 : " + r);
+
+//	입력값을 받는 내장함수 => 입력받은값 = 리턴값 => 확인 => 취소 - 입력받은 값 : null
+// 입력받은 값은 문자형
+// var a = prompt("입력하세요");
+
+// alert("리턴받은 값 : " + a);
+
+// alert("리턴받은 값 + 100 : " + (a+100));
+//a = 5, 결과:5100	문자 숫자 연결
+
+// 문자를 숫자로 변경하는 함수 parseInt(문자) -> 리턴 숫자
+// parseInt(a);
+// alert("리턴받은 값을 숫자로 변경 + 100 : " + (parseInt(a)+100));
+//a = 5, 결과:5100	숫자 더하기
+
+// alert("리턴받은 값 * 100 : " + (a*100));
+//a = 5, 결과:500	곱하기(문자형이 자동으로 숫자형 변경)
+
+// NaN(Not a Number) => 숫자 아님 => 문자
+// isNaN() => 숫자가 아니냐? => 리턴값  문자 true / 숫자 false
+
+// var b = isNaN("5");
+// alert("리턴받은 값 : " +b);
+
+
+// 값을 입력 받아서 숫자, 문자인지 판별		숫자면 +100, 문자 그대로 출력
+
+var a = prompt("입력하세요");
+var b = isNaN(a);
+
+if (b==false) {
+	r = parseInt(a)+100;
+} else {
+	r = a;
+}
+alert("return : " + r);
+
+
+
+// if(b==true){
+	
+// 	alert(a);
+
+// } else{
+	
+// 	alert(parseInt(a) + 100);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>

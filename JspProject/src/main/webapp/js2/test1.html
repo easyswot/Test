@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js2/test1.html</title>
+<script type="text/javascript">
+//	3. 내장 객체(웹브라우저 객체)
+//	=> 객체 특징, 속성(멤버 변수), 객체 기능함수(멤버함수, 메서드)
+//	windows 내장 객체 - location 내장 객체
+//					- history 내장 객체
+//					- document 내장 객체 - image
+// 									   - form - text, password, textares
+//									 		  - checkbox, radio
+//									 		  - select 
+
+// form안에 있는 내용을 서버에 전달 => action="a.jsp" 연결페이지(주소줄 변경)
+// 	=> 내용(데이터)을 전달하는 방식 method="get" 주소줄에 담아서 전달(주소줄에 보이면서 전달, 기본방식)
+// 		method="post" http에 담아서 전달(주소줄에 안보이면서 전달, form태그에서만 하는 전달방식)
+// 	type="submit" form태그 안에 있어야 동작, 버튼에 form안에 내용을 서버에 전달하는 기능을 가진 버튼
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</head>
+<body>
+<form action="a.jsp" method="get" name="fr">
+입력 : <input type="text" name="tx" value="값"><br>
+비밀번호 : <input type="password" name="ps"><br>
+여러줄 입력 : <textarea name="ta" rows="5" cols="10">값</textarea><br>
+라디오박스(여러개중에 하나 선택) : <input type="radio" name="ra" value="ra1">라디오1
+							<input type="submit" value="서버에 전송"><br>
+체크박스(여러 개 선택) :	<input type="checkbox" name="ch" value="ch1">체크박스1
+					<input type="checkbox" name="ch" value="ch2">체크박스2<br>
+목록상자 :<select name="sel">
+			<option value="s1">목록1</option>
+			<option value="s2">목록2</option>
+			<option value="s3">목록3</option>
+		</select> <br>
+숨김태그 : <input type="hidden" name="hi" value="숨긴값"> <br>
+파일 : <input type="file" name="file"><br>
+<input type="submit" value="서버에 전송">
+<input type="reset" value="폼초기화">
+<input type="button" value="버튼">
+
+
+	
+							
+</form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js2/test2.html</title>
+<script type="text/javascript">
+//window 내장객체 - document 내장객체 - form 내장객체 : 웹브라우저 html form 주제(멤버변수, 메서드() 정의)
+//document.폼이름.action 변수 폼 태그 연결페이지 저장	/	document.폼이름.submit() 함수() 폼안에 내용을 서버에 전달
+//document.폼이름.method 변수 폼 태그 데이터전송방식 저장	/	document.폼이름.reset() 함수() 폼안에 내용을 초기화
+
+function fun1() {
+	alert(document.fr.action);
+	alert(document.fr.method);
+}
+function fun2() {
+	document.fr.action="b.jsp";
+	document.fr.method="post";
+// 	서버에 전송
+	document.fr.submit();
+}
+function fun3(a) {
+// 	장바구니 버튼 클릭 => basket.jsp 이동
+// 	바로구매 버튼 클릭 => order.jsp 이동
+	if (a=='basket') {
+		document.fr.action="basket.jsp";
+	} else {
+		document.fr.action="order.jsp";
+	}
+// 	서버 전송
+	document.fr.submit();
+	
+	
+}
+
+
+
+
+
+</script>
+</head>
+<body>
+<form action="a.jsp" method="get" name="fr">
+텍스트상자 : <input type="text" name="tx"><br>
+<input type="button" value="폼정보 확인" onclick="fun1()">
+<input type="button" value="폼정보 변경" onclick="fun2()">
+<input type="button" value="장바구니" onclick="fun3('basket')">
+<input type="button" value="바로구매" onclick="fun3(order)">
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

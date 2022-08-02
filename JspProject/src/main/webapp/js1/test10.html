@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js1/test10.html</title>
+<script type="text/javascript">
+// window 내장객체 - document 내장객체 : 웹브라우저 html을 주제(멤버변수, 메서드() 정의)
+// document.title 변수 html문서제목 저장	/	history.write() 함수() html문서에 출력	
+// document.bgColor 변수 html문서 배경색 저장
+// document.fgColor 변수 html문서 글자 저장
+
+function fun1() {
+	alert(document.title);
+}
+function fun2() {
+	document.title="문서제목변경";
+}
+function fun3() {
+	alert(document.bgColor);
+}
+function fun4() {
+	document.bgColor="skyblue";
+}
+document.write("문서 내 글쓰기");
+function fun5(c) {
+	alert(c);
+	document.bgColor=c;
+}
+
+
+
+
+
+
+</script>
+</head>
+<body bgcolor="yellow">
+
+<input type="button" value="제목조회" onclick="fun1()">
+<input type="button" value="제목수정" onclick="fun2()">
+<input type="button" value="배경색조회" onclick="fun3()">
+<input type="button" value="배경색변경" onclick="fun4()">
+<input type="radio" name="col" value="red" onclick="fun5('red')">빨간색
+<input type="radio" name="col" value="green" onclick="fun5('green')">녹색
+<input type="radio" name="col" value="blue" onclick="fun5('blue')">파란색
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

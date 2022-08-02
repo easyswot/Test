@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js1/test6.html</title>
+<script type="text/javascript">
+// 	3. 내장 객체(웹브라우저 객체)
+// 	=> 객체 특징, 속성(멤버 변수), 객체 기능함수(멤버함수, 메서드)
+// 	windows 내장 객체 - location 내장 객체
+// 					- history 내장 객체
+// 					- document 내장 객체 - form, image, ...
+// 									   - text, password, textares
+// 									   - checkbox, radio
+// 									   - select 
+
+// 객체.멤버변수	/	객체.메서드() 호출
+
+function fun1() {
+	alert("message print");
+}
+
+function fun2() {
+	alert("double click message print");
+}
+function fun3() {
+	alert("mouse over message print");
+}
+// function fun4() {
+// 	alert("text box focus")
+// }
+// function fun4_() {
+// 	alert("텍스트박스 포커스 해제")
+// }
+function fun5() {
+	alert("키를 늘렀다가 놓았을 때");
+}
+function fun6() {
+	alert("문서를 불러왔을 때");
+}
+function fun7() {
+	alert("목록 선택 변경");
+}
+
+
+
+
+</script>
+</head>
+<body>
+<input type="button" value="click" onclick="fun1()">
+<input type="button" value="double click" ondblclick="fun2()">
+<input type="button" value="mouse over" onmouseover="fun3()">
+<!-- <input type="text" name="tx" onfocus="fun4()"> -->
+<!-- <input type="text" name="tx" onblur="fun4_()"> -->
+<input type="text" name="tx2" onkeyup="fun5()">
+<select onchange="fun7()">
+<option>목록1</option>
+<option>목록2</option>
+<option>목록3</option>
+
+</select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js1/test4.html</title>
+
+<script type="text/javascript">
+
+//	함수 정의 : 함수 이름 - fun1, "안녕하세요" 메시지 출력
+
+function fun1() {
+	alert("안녕하세요");
+}
+
+//	 함수 호출
+
+fun1();
+
+
+
+
+
+//	함수 정의 : 함수 이름 - fun2, 3개의 수를 받아서 합을 구하여 메시지 출력
+
+function fun2(a, b, c) {
+	
+	alert(a+b+c);
+	
+	return;
+}
+
+//	함수 호출
+
+
+fun2(1, 2, 3);
+
+
+
+
+
+//	함수 정의 함수 이름 fun3() - "무료 커피" 리턴(함수 호출한 곳으로 결과값 되돌려줌)
+
+function fun3() {
+	
+	return "무료 커피";
+		
+}
+
+//	함수 호출 => 리턴받은 값을 저장 => fun3() 기억 장소 만들어지고 리턴 값이 저장
+
+alert("리턴받은 값 : " + fun3());
+
+
+
+
+
+//	함수 정의 : 함수 이름 fun4() => 2개의 수를 받아서 곱을 구해서 리턴
+
+function fun4(e, f) {
+	
+	return e*f;
+	
+}
+
+//	함수 호출 => fun4(10, 20) 기억 장소가 만들어지고 리턴값이 저장 => 출력
+
+alert("리턴받은 값 : " + fun4(10, 20));
+alert("리턴받은 값을 이용해서 나누기 2 : " + fun4(10, 20)/2);
+
+
+
+
+
+//	f(x) = 3x+10
+//	함수 정의 : fun5() 값을 받아서 식의 결과를 리턴
+
+function fun5(g) {
+// 	return 3*g + 10;
+	var y = 3*g + 10;
+	return y;
+}
+
+
+
+//함수 호출
+
+alert("리턴받은 값 : " + fun5(34));
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

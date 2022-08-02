@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js1/test9.html</title>
+<script type="text/javascript">
+
+// window 내장객체 - history 내장객체 : 웹브라우저 방문기록저장 주제(멤버변수, 메서드() 정의)
+// history.length 변수 방문한 개수 저장	 /	history.back() 함수() 뒤로 이동
+// 									history.forward() 함수() 앞으로 이동
+// 									history.go(-1) 함수() 한칸 뒤로 이동
+
+function fun1() {
+	alert("방문 기록 개수 : " + history.length);
+}
+
+function fun2() {
+	alert("뒤로가기");
+	history.back();
+}
+
+function fun3() {
+	alert("앞으로가기");
+	history.forward();
+}
+
+function fun4() {
+	alert("2칸뒤로가기");
+	history.go(-2);
+}
+
+
+
+
+</script>
+</head>
+<body>
+
+<input type="button" value="방문개수" onclick="fun1()">
+<input type="button" value="뒤로가기" onclick="fun2()">
+<input type="button" value="앞으로가기" onclick="fun3()">
+<input type="button" value="2칸뒤로가기" onclick="fun4()">
+
+
+</body>
+</html>

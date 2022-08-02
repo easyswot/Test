@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js1/test7.html</title>
+<script type="text/javascript">
+
+// 	window 내장객체 : 웹브라우저window창을 주제(멤버변수, 메서드() 정의)
+// 객체.멤버변수	/	객체.메서드() 호출
+// window.open() 창열기 window.close() 창닫기
+
+function fun1() {
+//	window.open("열고자 하는 문서", "창이름", "창옵션");
+	window.open("http://www.naver.com", "win", "width=300, height=200");
+}
+function fun2() {
+	//	test1.html 문서 열기, 창이름 win2, 창크기 너비400 높이 300 , 위치왼쪽 100 위 100
+	window.open("test1.html", "win2", "width=400, height=200, left=100, top=100");
+}
+function fun3() {
+	//창닫기
+	window.close();
+}
+function fun4() {
+	window.open("test7_1.html", "win3", "width=50, height=50, left=50, top=50");
+}
+// 창 열고 닫기 test7_1.html문서 만들기 창닫기 버튼 하나 만들기
+//fun4() 창열기 test7_1.html 창열기
+
+</script>
+</head>
+<body>
+
+
+<input type="button" value="창 열기" onclick="fun1()">
+<input type="button" value="test1.html" onclick="fun2()">
+<input type="button" value="close" onclick="fun3()">
+<input type="button" value="window open close" onclick="fun4()">
+
+
+
+
+
+
+</body>
+</html>
