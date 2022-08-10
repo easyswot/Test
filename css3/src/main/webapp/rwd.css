@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* Mobile First */
+
+* {margin: 0; padding: 0;}
+
+body {padding: 0.7em;
+font-size: 12px;
+line-height: 1.6;}
+
+p {margin: 0.7em 0;}
+
+ul {padding-left: 1em;}
+
+.pre {white-space: pre;
+background-color: #ccc;
+width: 250px;
+margin-bottom: 2em;
+padding: 0 0 0.7em 0.7em;}
+
+#mq01, #mq02 {
+	border: 4px dashed #ccc;
+	margin: 1.5em 0;
+	padding: 0.7em;
+}
+
+
+/* 테블릿 - 600px */
+@media screen and (min-width: 600px) {
+	
+	body {
+		padding: 0.9em;
+		font-size: 14px;
+		line-height: 1.7;
+	}
+	
+	h2, h3, h4 {color: #05a;}
+	
+}
+
+
+
+/* pc - 992px이상 */
+@media screen and (min-width: 992px) {
+	body {
+		padding: 1.1em;
+		font-size: 16px;
+		line-height: 1.8;
+	}
+	
+	#mq01, #mq02 {
+		display: inline-block;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

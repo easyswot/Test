@@ -186,7 +186,13 @@ html {scroll-behavior: smooth;}
 }
 
 
-
+/* 5. position:sticky; */
+#sec05 {
+	background-color: #fff;
+	position: sticky;
+	top: 5px;
+	z-index: 99999;
+}
 
 
 

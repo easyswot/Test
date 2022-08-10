@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- viewport 설정 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>반응형웹 rwd</title>
+<link href="rwd.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<h1>반응형웹 Responsive Web Design</h1>
+ Mobile First
+<h2>viewport설정</h2>
+<p>
+head영역 내에 아래 소스를 추가하여 모바일에서의 화면 축소를 방지<br>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+</p>
+
+<h3>반응형 기술 - Media queries</h3>
+
+<p class="pre">
+	[구문 작성법]
+
+ @media 장치종류 and (조건) {
+	선택자 {속성: 속성값;}
+ }
+</p>
+
+<div id="mq01">
+<h4>Media queries의 장치종류</h4>
+ <ul>
+  <li>all = 장치 종류 무관</li>
+  <li>screen = 모니터로 확인하는 모든 컴퓨터(스마트폰, 테블릿 포함)</li>
+  <li>print = 프린터</li>
+  <li>speech = 시각장애인용 음성낭독기</li>
+ </ul>
+</div>
+
+<div id="mq02">
+ <h4>Media queries의 조건들</h4>
+  <ul>
+   <li>width and height of the viewport = 뷰포트의 너비나 높이</li>
+   <li>width and height of the device = 장치의 너비나 높이</li>
+   <li>orientation(landscape or portrait) = 화면 방향(가로/세로)</li>
+   <li>resolution = 해상도</li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
