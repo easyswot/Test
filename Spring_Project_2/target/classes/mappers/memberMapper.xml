@@ -15,7 +15,7 @@
 		     , #{pass}
 		     , #{name}
 		     , #{date}
-		     );
+		     )
 	</insert>
 
 	<select id="userCheck" resultType="com.itwillbs.domain.MemberDTO"><!-- 타입에 패키지명까지 적어야됨 -->
@@ -29,6 +29,22 @@
 		SELECT *
 		  FROM MEMBERS
 		 WHERE ID = #{id}
+	</select>
+	
+	<update id="updateMember">
+		UPDATE MEMBERS
+		   SET NAME = #{name}
+		 WHERE ID = #{id}
+	</update>
+	
+	<delete id="deleteMember">
+		DELETE FROM MEMBERS
+		 WHERE ID = #{id}
+	</delete>
+	
+	<select id="getMemberList" resultType="com.itwillbs.domain.MemberDTO">
+		SELECT *
+		  FROM MEMBERS;
 	</select>
 
 </mapper>

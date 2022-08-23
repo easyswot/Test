@@ -1,6 +1,7 @@
 package com.itwillbs.service;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 import javax.inject.Inject;
 
@@ -36,6 +37,25 @@ public class MemberServiceImpl implements MemberService {
 	public MemberDTO getMember(String id) {
 		System.out.println("MemberService getMember()");
 		return memberDAO.getMember(id);
+	}
+
+	@Override
+	public void updateMember(MemberDTO memberDTO) {
+		System.out.println("MemberService updateMember()");
+		memberDAO.updateMember(memberDTO);
+	}
+
+	@Override
+	public void deleteMember(MemberDTO memberDTO) {
+		System.out.println("MemberService deleteMEmber()");
+		memberDAO.deleteMember(memberDTO);
+		
+	}
+
+	@Override
+	public List<MemberDTO> getMemberList() {
+		System.out.println("MemberService getMemberList()");
+		return memberDAO.getMemberList();
 	}
 
 }

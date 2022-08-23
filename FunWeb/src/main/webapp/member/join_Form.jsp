@@ -55,22 +55,22 @@
 			
 			switch(count){
 			case 4: // 특수문자, 대문자, 소문자, 숫자 중 4개를 만족
-				spanElem.innerHTML = "사용 가능한 패스워드(안전)";
+				spanElem.innerHTML = "보안 강도 : 우수";
 				spanElem.style.color = "GREEN";
 				checkPassResult = true;
 				break;
 			case 3: // 특수문자, 대문자, 소문자, 숫자 중 3개를 만족
-				spanElem.innerHTML = "사용 가능한 패스워드(보통)";
-				spanElem.style.color = "YELLOW";
-				checkPassResult = true;
-				break;
-			case 2:	// 특수문자, 대문자, 소문자, 숫자 중 2개를 만족
-				spanElem.innerHTML = "사용 가능한 패스워드(위험)";
+				spanElem.innerHTML = "보안 강도 : 보통";
 				spanElem.style.color = "ORANGE";
 				checkPassResult = true;
 				break;
+			case 2:	// 특수문자, 대문자, 소문자, 숫자 중 2개를 만족
+				spanElem.innerHTML = "보안 강도 : 위험";
+				spanElem.style.color = "ORANGERED";
+				checkPassResult = true;
+				break;
 			default:
-				spanElem.innerHTML = "영문자, 숫자, 특수문자 중 2가지 이상 조합 필수";
+				spanElem.innerHTML = "사용 불가능한 패스워드!";
 				spanElem.style.color = "RED";
 				checkPassResult = false;
 			}
@@ -78,7 +78,7 @@
 			
 		} else{
 // 			spanElem.innerHTML = "사용 불가능한 패스워드";
-			spanElem.innerHTML = "영문자, 숫자, 특수문자 조합 8 ~ 16자리 필수";
+			spanElem.innerHTML = "8 ~ 16자리 영문자, 숫자, 특수문자 필수!";
 			spanElem.style.color = "RED";
 			checkPassResult = false;
 			

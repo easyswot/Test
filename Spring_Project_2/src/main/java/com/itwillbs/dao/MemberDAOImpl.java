@@ -1,6 +1,7 @@
 package com.itwillbs.dao;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 import javax.inject.Inject;
 
@@ -40,6 +41,25 @@ public class MemberDAOImpl implements MemberDAO {
 	public MemberDTO getMember(String id) {
 		System.out.println("MemberDAOImpl getMember()");
 		return sqlSession.selectOne(namespace + ".getMember", id);
+	}
+
+	@Override
+	public void updateMember(MemberDTO memberDTO) {
+		System.out.println("MemberDAOImpl updateMember()");
+		sqlSession.update(namespace + ".updateMember", memberDTO);
+	}
+
+	@Override
+	public void deleteMember(MemberDTO memberDTO) {
+		System.out.println("MemberDAOImpl deleteMember()");
+		sqlSession.delete(namespace + ".deleteMember", memberDTO);
+		
+	}
+
+	@Override
+	public List<MemberDTO> getMemberList() {
+		System.out.println("MemberDAOImpl getMemberList()");
+		return sqlSession.selectList(namespace + ".getMemberList");
 	}
 
 	
