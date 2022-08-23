@@ -24,7 +24,7 @@ padding: 0 0 0.7em 0.7em;}
 }
 
 
-/* 테블릿 - 600px */
+/* 테블릿 - 600px이상 */
 @media screen and (min-width: 600px) {
 	
 	body {
@@ -56,7 +56,18 @@ padding: 0 0 0.7em 0.7em;}
 
 
 
-
+@media print {
+	
+	body {background-color: #fff;
+	background-image: none;
+	color: #000;
+	}
+	
+	body * {background-color: #fff; 
+	background-image: none;
+	color: #000;}
+	
+}
 
 
 

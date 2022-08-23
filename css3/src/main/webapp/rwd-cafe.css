@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {margin: 0;	padding: 0;}
+
+body {font-family: ;}
+
+a {text-decoration: none;
+ font-family: ;}
+
+#main a:link, #main a:visited {
+	/* 메뉴 링크의 평상시 상태 지정 */
+	color: #fff; }
+
+#main a:hover, #main a:active {
+	/* 메뉴 링크의 동작시 상태 지정 */
+	color: #ff0; }
+	
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.3em;}
+
+
+p {font-size: 1.3em;
+	line-height: 2.5; }
+
+li {font-size: 1em;
+	line-height: 2; }
+
+
+
+/* mobile first ~ smart phone */
+
+#container {border: 1px solid red;
+ margin: 0 auto;
+ }
+
+header {background-image: url("img/header.jpg");
+background-size: cover;	/* 이미지 하나로 영역 전체 다 덮기 */
+background-position: center center;
+/* 배경 이미지의 위치를 정중앙으로(수평 수직) */
+height: 300px;}
+
+#main {background-color: #000;
+height: 50px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
