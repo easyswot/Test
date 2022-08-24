@@ -73,7 +73,7 @@ public class BoardController {
 		
 		pageDTO.setCount(count);
 		pageDTO.setPageBlock(pageBlock);
-		pageDTO.setStartPage(endPage);
+		pageDTO.setStartPage(startPage);
 		pageDTO.setEndPage(endPage);
 		pageDTO.setPageCount(pageCount);
 		
@@ -85,4 +85,22 @@ public class BoardController {
 		// WEB-INF/views/board/list.jsp 이동
 		return "/board/list";
 	}
+	
+//	가상주소 시작점 http://localhost:8080/my_web_2/board/fwrite 
+	@RequestMapping(value = "/board/fwrite", method = RequestMethod.GET)
+	public String fwrite() {
+		// 주소변경없이 이동
+		// WEB-INF/views/board/writeForm.jsp 이동
+		return "/board/fwriteForm";
+	}
+	
+	//	가상주소 시작점 http://localhost:8080/my_web_2/board/fwritePro 
+	@RequestMapping(value = "/board/fwritePro", method = RequestMethod.POST)
+	public String fwritePro(BoardDTO boardDTO) {
+		
+		boardService.insertBoard(boardDTO);
+		
+		// 주소변경하면서 이동	/board/list 이동
+		return "redirect:/board/list";
+	}	
 }
